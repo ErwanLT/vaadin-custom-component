@@ -39,3 +39,44 @@ starRating.setStarSize("24px");
 // Change the total number of stars
 starRating.setTotalStars(7);
 ```
+
+## Progress Components
+### Progress bar with label
+![progress1.png](images/progress1.png)
+![progress2.png](images/progress2.png)
+![progress3.png](images/progress3.png)
+
+The ProgressBarWithLabel is a custom Vaadin component that visually represents a progress bar with an optional label displaying the progress percentage or custom text. The color of the progress bar changes dynamically based on the current progress value, providing a visual indication of the progress status.
+#### Features
+* **Dynamic Progress Display**: The progress bar visually reflects the current progress, which can be set between 0% and 100%.
+* **Color Change Based on Progress**:
+  * Red for 0% to 33% progress.
+  * Yellow for 33% to 66% progress.
+  * Green for 66% to 100% progress.
+* **Customizable Label**: You can display a percentage or set a custom label inside the progress bar.
+* **Smooth Animations**: The progress bar transitions smoothly when updating the width and color.
+
+#### Usage
+##### Basic Setup
+To use the ProgressBarWithLabel component in your Vaadin application, first, include it in your view:
+
+```java
+ProgressBarWithLabel progressBar = new ProgressBarWithLabel();
+progressBar.setWidth("100%"); // Set the progress bar to be full-width
+```
+##### Setting the Progress
+You can set the progress value using the setProgress(double progress) method. The progress value should be between 0.0 (0%) and 1.0 (100%):
+```java
+progressBar.setProgress(0.5); // Set progress to 50%
+```
+##### Customizing the Label
+To customize the label displayed inside the progress bar, use the setLabel(String label) method:
+```java
+
+progressBar.setLabel("Loading..."); // Set a custom label
+```
+##### Dynamic Color Changes
+The color of the progress bar will automatically adjust based on the progress value:
+* Red for 0% to 33% progress.
+* Yellow for 33% to 66% progress.
+* Green for 66% to 100% progress.
