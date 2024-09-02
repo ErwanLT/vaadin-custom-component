@@ -1,6 +1,8 @@
 # vaadin-custom-component
 ## Rating Components
 ### Star rating
+![starRating.png](images/starRating.png)
+
 The StarRating component is a highly configurable star rating system for Vaadin applications. It allows users to select a rating by clicking on stars. This component is designed to be flexible with options to set the number of stars, star size, colors, and the initial rating.
 #### Features
 * **Star Rating**: Select a rating by clicking on the stars.
